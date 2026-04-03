@@ -53,10 +53,10 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 0 24px; transition: var(--transition);
 }
 .navbar.scrolled { box-shadow: var(--shadow-md); }
-.navbar .container { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.navbar .container { display: flex; align-items: center; justify-content: space-between; height: 84px; }
 .nav-logo { display: flex; align-items: center; gap: 12px; }
 .nav-logo .logo-img {
-  width: 42px; height: 42px; border-radius: 12px; object-fit: contain;
+  width: 54px; height: 54px; border-radius: 12px; object-fit: contain;
 }
 .nav-logo span { font-size: 1.1rem; font-weight: 700; color: var(--primary); }
 .nav-links { display: flex; align-items: center; gap: 28px; }
@@ -69,6 +69,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 10px 28px; border-radius: 50px;
   font-weight: 700; font-size: 0.9rem; border: none; cursor: pointer;
   transition: var(--transition); font-family: inherit;
+  display: inline-flex; align-items: center; gap: 8px;
 }
 .nav-cta:hover { transform: translateY(-2px); box-shadow: var(--shadow-primary); }
 .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
@@ -277,6 +278,7 @@ img { max-width: 100%; height: auto; display: block; }
   z-index: 999; transition: var(--transition); animation: bounce 2s infinite;
 }
 .floating-whatsapp:hover { transform: scale(1.1); }
+.whatsapp-icon { width: 20px; height: 20px; fill: currentColor; }
 .floating-whatsapp svg { width: 32px; height: 32px; fill: #fff; }
 @keyframes bounce { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-8px); } }
 
@@ -303,7 +305,7 @@ img { max-width: 100%; height: auto; display: block; }
   .mobile-toggle { display: block; }
   .nav-links.active {
     display: flex; flex-direction: column;
-    position: absolute; top: 72px; right: 0; left: 0;
+    position: absolute; top: 84px; right: 0; left: 0;
     background: rgba(255,255,255,0.98); padding: 24px; gap: 20px;
     backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-color);
   }
