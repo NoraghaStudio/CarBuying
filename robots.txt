@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://buy-damaged-cars-riyadh.com/sitemap.xml
